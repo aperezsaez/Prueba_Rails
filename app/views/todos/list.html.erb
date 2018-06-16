@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <div class="row"></div>
+    <div class="container">
+    <% @todos.each do |i| %>
+    <% if i.completed == true %>
+    <div class="col-md-6"><%= i.description %></div>
+    <% end %>
+    <% end %>
+    <% @todos.each do |i| %>
+    <% if i.completed == false %>
+    <div class="col-md-6"><%= i.description %></div>
+    <% end %>
+    <% end %>
+
+
+    </div>
+
+  </body>
+</html>

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <%= form_with model: @todos, local: true do |f| %>
+    <%= f.label :description, "Descripción" %>
+    <%= f.text_field :description %>
+    <%= f.label :completed, "Check" %>
+    <%= f.check_box :completed %>
+    <%= f.submit "Enviar" %>
+    <% end %>
+  </body>
+</html>
